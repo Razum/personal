@@ -25,6 +25,7 @@ html {
   color: rgb(var(--color-dark) / 100%);
   font-size: 16px;
   font-family: var(--font-family-primary);
+  line-height: 1.5;
 }
 
 @media (width >= 54rem) {
@@ -423,13 +424,13 @@ p {
 
 .stat-table__cell {
   flex: 1;
-  padding: 1em .75em;
-  font-size: 1.25rem;
+  padding: 1.5em .75em;
+  font-size: 1rem;
   text-align: center;
 }
 
 .stat-table__cell > div {
-  margin-bottom: .5em;
+  margin-bottom: .25em;
   font-weight: 900;
   font-size: 3em;
 }
