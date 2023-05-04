@@ -349,22 +349,6 @@ p {
   background-color: rgb(var(--color-gray) / 100%);
 }
 
-.stat-table {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  background-color: rgb(var(--color-gray) / 100%);
-}
-
-@media (width >= 54rem) {
-  .stat-table {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-
 /** CONTACTS */
 
 .contacts {
@@ -421,6 +405,22 @@ p {
 
 
 /** STATS */
+.stat-table {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  text-transform: uppercase;
+  background-color: rgb(var(--color-gray) / 100%);
+}
+
+@media (width >= 54rem) {
+  .stat-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .stat-table__cell {
   flex: 1;
   padding: 1em .75em;
@@ -445,7 +445,7 @@ p {
 @media (width >= 32rem) {
   .photo {
     float: left;
-    max-width: 33%;
+    max-width: 25%;
     margin: 0 1.5em 1em 0;
   }
 }
