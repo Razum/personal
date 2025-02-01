@@ -5,19 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "npx stylelint './**/*.css' --config .stylelintrc.json"
+    "stylelint": "npx stylelint './**/*.css' --config .stylelintrc.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@namics/stylelint-bem": "^8.1.0",
-    "stylelint": "^15.6.0",
+    "@namics/stylelint-bem": "^10.1.0",
+    "stylelint": "^16.14.1",
     "stylelint-config-airbnb": "^0.0.0",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-clean-order": "^7.0.0",
+    "stylelint-config-standard": "^37.0.0",
     "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^5.0.0",
-    "stylelint-selector-bem-pattern": "^2.1.1"
-  }
+    "stylelint-scss": "^6.11.0",
+    "stylelint-selector-bem-pattern": "^4.0.1"
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }

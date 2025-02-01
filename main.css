@@ -2,7 +2,7 @@
   --color-light: 255 255 255;
   --color-dark: 64 64 64;
   --color-gray: 239 239 239;
-  --font-family-primary: Raleway, sans-serif;
+  --font-family-primary: "Raleway", sans-serif;
 
 }
 
@@ -14,24 +14,17 @@
 
 body,
 html {
+  overflow: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 html {
   box-sizing: border-box;
-  color: rgb(var(--color-dark) / 100%);
-  font-size: 16px;
   font-family: var(--font-family-primary);
   line-height: 1.5;
-}
-
-@media (width >= 54rem) {
-  html {
-    font-size: 18px
-  }
+  color: rgb(var(--color-dark) / 100%);
 }
 
 .icon {
@@ -77,9 +70,9 @@ p {
 }
 
 .tile__content {
+  overflow-y: auto;
   width: 100%;
   height: 0;
-  overflow-y: auto;
   transition: width .25s ease
 }
 
@@ -91,8 +84,8 @@ p {
 }
 
 .tile__content > div {
-  padding: 1rem 2rem 5rem;
   transform: translateY(10%);
+  padding: 1rem 2rem 5rem;
   opacity: 0;
   transition: all .1s ease
 }
@@ -190,17 +183,17 @@ p {
 /** EXPEREINCE */
 .experience {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
 }
 
 
 .timeline {
   margin-left: 10rem;
-  color: #707070;
-  font-weight: 400;
-  font-size: 1.25rem;
   border-left: 2px solid rgb(var(--color-gray) / 100%);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #707070;
 }
 
 .timeline__year {
@@ -226,17 +219,17 @@ p {
 }
 
 .timeline__year::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: -1px;
+  transform: translate(-50%, -50%);
   display: block;
   width: 14px;
   height: 14px;
-  background-color: #c68532;
   border-radius: 50%;
+  background-color: #c68532;
   box-shadow: 0 0 0 2px rgb(var(--color-light) / 100%), 0 0 0 4px rgb(var(--color-gray) / 100%);
-  transform: translate(-50%, -50%);
-  content: "";
 }
 
 .timeline__company {
@@ -257,31 +250,31 @@ p {
 
 .timeline__company::after,
 .timeline__company::before {
+  content: "";
   position: absolute;
   top: 50%;
   display: block;
-  background-color: rgb(var(--color-gray) / 100%);
   border-radius: 50%;
-  content: "";
+  background-color: rgb(var(--color-gray) / 100%);
 }
 
 .timeline__company::before {
   left: -4rem;
+  transform: translate(-100%, -50%);
   width: 4rem;
   height: 4rem;
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: cover;
-  transform: translate(-100%, -50%)
+  background-size: cover
 }
 
 .timeline__company::after {
   top: 50%;
   left: -1px;
+  transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-  background-color: rgb(var(--color-gray) / 100%);
-  transform: translate(-50%, -50%)
+  background-color: rgb(var(--color-gray) / 100%)
 }
 
 .timeline__company--mwdn::before {
@@ -321,10 +314,10 @@ p {
   position: absolute;
   top: 50%;
   left: -1.5rem;
+  transform: translate(-100%, -50%);
   width: 1.5rem;
   height: 2px;
   background-color: rgb(var(--color-gray) / 100%);
-  transform: translate(-100%, -50%);
 }
 
 
@@ -337,10 +330,10 @@ p {
 
 .skills__title {
   width: 100%;
-  padding: .5rem;
-  color: rgb(var(--color-light) / 100%);
-  font-weight: 300;
+  padding: .5rem 1.25rem;
   font-size: 2rem;
+  font-weight: 300;
+  color: rgb(var(--color-light) / 100%);
   background-color: #c8cc55;
 }
 
@@ -407,9 +400,9 @@ p {
 
 /** STATS */
 .stat-table {
+  clear: both;
   display: flex;
   flex-direction: column;
-  clear: both;
   text-transform: uppercase;
   background-color: rgb(var(--color-gray) / 100%);
 }
@@ -431,16 +424,16 @@ p {
 
 .stat-table__cell > div {
   margin-bottom: .25em;
-  font-weight: 900;
   font-size: 3em;
+  font-weight: 900;
 }
 
 .photo {
   display: block;
+  shape-outside: circle(50%);
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  shape-outside: circle(50%);
 }
 
 @media (width >= 32rem) {
