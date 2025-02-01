@@ -161,17 +161,6 @@ p {
   }
 }
 
-.tile--links {
-  order: -2;
-  background-color: #4c8aa4;
-}
-
-@media (width >= 64rem) {
-  .tile--links {
-    order: 0
-  }
-}
-
 .tile--contacts {
   order: -1;
   background-color: rgb(var(--color-dark) / 100%);
@@ -360,8 +349,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   padding: 1rem;
+  color: white;
   transition: background-color .25s ease;
 }
 
