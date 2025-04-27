@@ -1,320 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description"
-          content="Front End Web Developer from Odessa, Ukraine with over 7 years of experience in planning, coding, testing and maintaining websites and applications.">
-    <meta name="author" content="Roman Razumieienko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Front End Web Developer from Odessa, Ukraine with over 7 years of experience in planning, coding, testing and maintaining websites and applications."
+    />
+    <meta name="author" content="Roman Razumieienko" />
     <title>Roman Razumieienko - Front End developer</title>
-    <link rel="icon" type="image/png" href="assets/images/logo-32x32.png"/>
+    <link rel="icon" type="image/png" href="assets/images/logo-32x32.png" />
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="razumieienko">
-    <meta name="apple-mobile-web-app-title" content="razumieienko">
-    <meta name="theme-color" content="#589A35">
-    <meta name="msapplication-navbutton-color" content="#589A35">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" sizes="192x192" href="assets/images/logo-192x192.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="assets/images/logo-192x192.png">
-    <link rel="icon" sizes="120x120" href="assets/images/logo-120x120.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/logo-120x120.png">
-    <link rel="icon" sizes="64x64" href="assets/images/logo-64x64.png">
-    <link rel="apple-touch-icon" sizes="64x64" href="assets/images/logo-64x64.png">
-    <link rel="icon" sizes="32x32" href="assets/images/logo-32x32.png">
-    <link rel="apple-touch-icon" sizes="32x32" href="assets/images/logo-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-    <link href="./main.css" type="text/css" rel="stylesheet"/>
-    <script>window.location.hash = '#about';</script>
-</head>
-<body>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
-    <symbol fill="currentColor" id="icon-contacts" viewBox="0 0 24 24">
-        <path d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z"/>
-    </symbol>
-    <symbol id="icon-about" viewBox="0 0 297 297">
-        <path d="M148.51 117.216c32.317 0 58.608-26.291 58.608-58.608S180.827 0 148.51 0c-32.317 0-58.608 26.291-58.608 58.608s26.291 58.608 58.608 58.608zm78.644 28.402c-.025-.008-.073-.026-.098-.032-7.631-1.864-30.999-5.133-30.999-5.133a5.194 5.194 0 0 0-6.406 3.188l-35.174 96.509c-2.029 5.567-9.903 5.567-11.932 0l-35.174-96.509a5.195 5.195 0 0 0-4.876-3.42c-.504 0-24.531 3.369-32.53 5.358-21.858 5.435-35.645 26.929-35.645 49.329v80.302c0 12.034 9.756 21.79 21.79 21.79h184.782c12.034 0 21.79-9.756 21.79-21.79v-80.569c-.001-22.303-14.328-42.096-35.528-49.023z"/>
-        <path d="M161.775 138.613c-1.404-1.53-3.456-2.299-5.532-2.299h-15.485c-2.076 0-4.129.77-5.532 2.299a7.183 7.183 0 0 0-.946 8.462l8.278 12.479-3.875 32.69 7.631 20.3c.744 2.042 3.631 2.042 4.375 0l7.631-20.3-3.875-32.69 8.278-12.479a7.186 7.186 0 0 0-.948-8.462z"/>
-    </symbol>
-    <symbol id="icon-experience" viewBox="0 0 297 297">
-        <path d="M132.335 92.134a7.224 7.224 0 0 0-11.652 0l-38.401 52.401a7.223 7.223 0 0 0 5.826 11.492h15.788v121.714a7.222 7.222 0 0 0 7.222 7.223h30.78a7.223 7.223 0 0 0 7.223-7.223V156.027h15.787a7.224 7.224 0 0 0 5.826-11.492l-38.399-52.401z"/>
-        <path d="M51.448 134.986a7.224 7.224 0 0 0-11.652 0l-38.4 52.401a7.223 7.223 0 0 0 5.826 11.492H23.01v78.862a7.222 7.222 0 0 0 7.222 7.223h30.78a7.223 7.223 0 0 0 7.223-7.223v-78.862h15.788a7.223 7.223 0 0 0 5.826-11.492l-38.401-52.401zM242.71 75.737c17.563 0 31.85-14.288 31.85-31.851s-14.288-31.85-31.85-31.85-31.851 14.288-31.851 31.85 14.289 31.851 31.851 31.851zm34.983 15.435l-.053-.018-9.091-2.789a2.822 2.822 0 0 0-3.481 1.732l-19.115 52.447c-1.103 3.026-5.382 3.026-6.485 0l-19.115-52.447a2.822 2.822 0 0 0-2.65-1.858c-.274 0-9.911 2.912-9.911 2.912-11.612 3.869-19.371 14.635-19.371 26.807v55.481c0 .551.161 1.09.464 1.55l19.945 30.352v76.799a2.823 2.823 0 0 0 2.823 2.823h62.115a2.823 2.823 0 0 0 2.823-2.823v-76.799l19.945-30.352c.302-.46.464-.999.464-1.55v-55.627a28.034 28.034 0 0 0-19.307-26.64z"/>
-        <path d="M251.017 86.05c-.879-.957-2.163-1.439-3.462-1.439h-9.69c-1.299 0-2.583.482-3.462 1.439a4.495 4.495 0 0 0-.592 5.295l5.18 7.809-2.425 20.456 4.775 12.702c.466 1.277 2.272 1.277 2.738 0l4.775-12.702-2.425-20.456 5.18-7.809a4.493 4.493 0 0 0-.592-5.295z"/>
-    </symbol>
-    <symbol id="icon-skills" viewBox="0 0 297 297">
-        <circle cx="259.875" cy="277.029" r="16.898"/>
-        <circle cx="259.875" cy="141.843" r="16.898"/>
-        <circle cx="259.875" cy="23.555" r="16.898"/>
-        <path d="M192.282 14.85a8.705 8.705 0 0 0-8.705 8.705v109.583h-8.193a8.705 8.705 0 0 0 0 17.41h8.193v126.481a8.705 8.705 0 0 0 8.705 8.705h37.6c-.804-2.765-1.244-5.684-1.244-8.705s.44-5.94 1.244-8.705h-28.895V150.548h28.895a31.126 31.126 0 0 1-1.244-8.705c0-3.021.44-5.94 1.244-8.705h-28.895V32.26h28.895a31.126 31.126 0 0 1-1.244-8.705c0-3.021.44-5.94 1.244-8.705h-37.6zM79.305 69.319c19.112 0 34.66-15.548 34.66-34.66S98.416 0 79.305 0s-34.66 15.548-34.66 34.66 15.548 34.659 34.66 34.659zM117.373 86.116l-.058-.019-9.892-3.035a3.071 3.071 0 0 0-3.788 1.885L82.833 142.02c-1.2 3.293-5.857 3.293-7.057 0L54.975 84.946a3.071 3.071 0 0 0-3.784-1.886l-9.884 3.032c-12.637 4.211-21.08 15.925-21.08 29.172v60.375c0 .599.175 1.185.504 1.686l21.705 33.029v83.572a3.072 3.072 0 0 0 3.072 3.072h67.593a3.072 3.072 0 0 0 3.072-3.072v-83.572l21.704-33.029a3.072 3.072 0 0 0 .505-1.686v-60.533a30.503 30.503 0 0 0-21.009-28.99z"/>
-        <path d="M86.737 81.472c-.786-.856-1.935-1.287-3.098-1.287h-8.67c-1.163 0-2.312.431-3.098 1.287a4.023 4.023 0 0 0-.53 4.738l4.635 6.987-2.17 18.302 4.272 11.365c.417 1.143 2.033 1.143 2.45 0l4.272-11.365-2.17-18.302 4.635-6.987a4.018 4.018 0 0 0-.528-4.738z"/>
-    </symbol>
-    <symbol id="icon-wellfound" viewBox="0 0 739.8 355.5067">
-        <path fill="#100f0d"
-              d="M107.8479 351.4931 0 3.9761h100.4177l63.6636 249.8426L233.2987 3.976h100.7186l69.1734 249.8427L466.8547 3.976h100.384L458.1093 351.4931h-106.996l-67.4586-250.9104-68.812 250.9104H107.8479"/>
-        <path fill="#ea2623"
-              d="M739.7946 297.1561c0-32.227-26.1253-58.351-58.3506-58.351-32.2267 0-58.3507 26.124-58.3507 58.351 0 32.2251 26.124 58.3506 58.3507 58.3506 32.2253 0 58.3506-26.1255 58.3506-58.3506m0-238.8121c0-32.2267-26.1253-58.3507-58.3506-58.3507-32.2267 0-58.3507 26.124-58.3507 58.3507 0 32.2253 26.124 58.3507 58.3507 58.3507 32.2253 0 58.3506-26.1254 58.3506-58.3507"/>
-    </symbol>
-    <symbol id="icon-github" viewBox="0 0 32 32">
-        <path d="M0 15.968q0-3.264 1.28-6.208 2.528-5.952 8.48-8.48 2.944-1.28 6.208-1.28t6.208 1.28q5.888 2.496 8.48 8.48 1.28 3.040 1.28 6.208t-1.28 6.208q-2.592 6.016-8.48 8.544-2.944 1.28-6.208 1.28t-6.208-1.28q-5.952-2.56-8.48-8.544-1.28-2.944-1.28-6.208zM2.496 15.968q0 4.512 2.688 8.064 2.656 3.488 6.944 4.96v-2.56q0-1.92 1.28-2.784-0.64-0.032-1.504-0.224-1.632-0.288-2.784-1.024-2.912-1.76-2.912-6.368 0-2.4 1.6-4.096-0.736-1.888 0.16-4.096h0.64q0.32 0 0.8 0.16 1.248 0.384 2.784 1.408 1.952-0.512 3.84-0.512t3.872 0.512q1.248-0.832 2.336-1.28 1.024-0.384 1.472-0.32l0.384 0.032q0.864 2.208 0.16 4.096 1.6 1.696 1.6 4.096 0 3.584-1.76 5.408-0.96 1.024-2.528 1.6-1.312 0.48-2.912 0.608 1.312 0.928 1.312 2.784v2.56q4.128-1.472 6.816-5.024 2.624-3.52 2.624-8 0-2.72-1.056-5.248-1.024-2.432-2.88-4.288-1.792-1.792-4.288-2.848-2.56-1.088-5.216-1.088-2.624 0-5.248 1.088-2.4 1.024-4.288 2.848-1.792 1.856-2.88 4.288-1.056 2.528-1.056 5.248z"></path>
-    </symbol>
-    <symbol id="icon-linkedin" viewBox="0 0 33 32">
-        <path d="M0 3.84q0-1.6 1.12-2.656t2.912-1.024q1.76 0 2.848 1.024 1.12 1.056 1.12 2.752 0 1.536-1.088 2.56-1.12 1.056-2.944 1.056h-0.032q-1.76 0-2.848-1.056t-1.088-2.656zM0.416 31.84v-21.376h7.104v21.376h-7.104zM11.456 31.84h7.104v-11.936q0-1.12 0.256-1.728 0.448-1.088 1.376-1.856t2.272-0.736q3.584 0 3.584 4.832v11.424h7.104v-12.256q0-4.736-2.24-7.2t-5.92-2.432q-4.128 0-6.432 3.552v0.064h-0.032l0.032-0.064v-3.040h-7.104q0.064 1.024 0.064 6.368t-0.064 15.008z"></path>
-    </symbol>
-    <symbol id="icon-xing" viewBox="0 0 30 32">
-        <path d="M0 22.336h7.008l5.536-9.152-4.16-7.328h-7.008l4.16 7.328zM11.584 19.456l11.072-19.456h7.424l-11.040 19.456 7.104 12.544h-7.424z"></path>
-    </symbol>
-    <symbol id="icon-gmail" viewBox="0 0 24 24">
-        <path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"/>
-    </symbol>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="razumieienko" />
+    <meta name="apple-mobile-web-app-title" content="razumieienko" />
+    <meta name="theme-color" content="#589A35" />
+    <meta name="msapplication-navbutton-color" content="#589A35" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" sizes="192x192" href="assets/images/logo-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/images/logo-192x192.png"
+    />
+    <link rel="icon" sizes="120x120" href="assets/images/logo-120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/images/logo-120x120.png"
+    />
+    <link rel="icon" sizes="64x64" href="assets/images/logo-64x64.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="64x64"
+      href="assets/images/logo-64x64.png"
+    />
+    <link rel="icon" sizes="32x32" href="assets/images/logo-32x32.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="assets/images/logo-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,700"
+      rel="stylesheet"
+    />
+    <link href="./main.css" type="text/css" rel="stylesheet" />
+    <script>
+      window.location.hash = "#about";
+    </script>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <symbol fill="currentColor" id="icon-contacts" viewBox="0 0 24 24">
+        <path
+          d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z"
+        />
+      </symbol>
+      <symbol id="icon-about" viewBox="0 0 297 297">
+        <path
+          d="M148.51 117.216c32.317 0 58.608-26.291 58.608-58.608S180.827 0 148.51 0c-32.317 0-58.608 26.291-58.608 58.608s26.291 58.608 58.608 58.608zm78.644 28.402c-.025-.008-.073-.026-.098-.032-7.631-1.864-30.999-5.133-30.999-5.133a5.194 5.194 0 0 0-6.406 3.188l-35.174 96.509c-2.029 5.567-9.903 5.567-11.932 0l-35.174-96.509a5.195 5.195 0 0 0-4.876-3.42c-.504 0-24.531 3.369-32.53 5.358-21.858 5.435-35.645 26.929-35.645 49.329v80.302c0 12.034 9.756 21.79 21.79 21.79h184.782c12.034 0 21.79-9.756 21.79-21.79v-80.569c-.001-22.303-14.328-42.096-35.528-49.023z"
+        />
+        <path
+          d="M161.775 138.613c-1.404-1.53-3.456-2.299-5.532-2.299h-15.485c-2.076 0-4.129.77-5.532 2.299a7.183 7.183 0 0 0-.946 8.462l8.278 12.479-3.875 32.69 7.631 20.3c.744 2.042 3.631 2.042 4.375 0l7.631-20.3-3.875-32.69 8.278-12.479a7.186 7.186 0 0 0-.948-8.462z"
+        />
+      </symbol>
+      <symbol id="icon-experience" viewBox="0 0 297 297">
+        <path
+          d="M132.335 92.134a7.224 7.224 0 0 0-11.652 0l-38.401 52.401a7.223 7.223 0 0 0 5.826 11.492h15.788v121.714a7.222 7.222 0 0 0 7.222 7.223h30.78a7.223 7.223 0 0 0 7.223-7.223V156.027h15.787a7.224 7.224 0 0 0 5.826-11.492l-38.399-52.401z"
+        />
+        <path
+          d="M51.448 134.986a7.224 7.224 0 0 0-11.652 0l-38.4 52.401a7.223 7.223 0 0 0 5.826 11.492H23.01v78.862a7.222 7.222 0 0 0 7.222 7.223h30.78a7.223 7.223 0 0 0 7.223-7.223v-78.862h15.788a7.223 7.223 0 0 0 5.826-11.492l-38.401-52.401zM242.71 75.737c17.563 0 31.85-14.288 31.85-31.851s-14.288-31.85-31.85-31.85-31.851 14.288-31.851 31.85 14.289 31.851 31.851 31.851zm34.983 15.435l-.053-.018-9.091-2.789a2.822 2.822 0 0 0-3.481 1.732l-19.115 52.447c-1.103 3.026-5.382 3.026-6.485 0l-19.115-52.447a2.822 2.822 0 0 0-2.65-1.858c-.274 0-9.911 2.912-9.911 2.912-11.612 3.869-19.371 14.635-19.371 26.807v55.481c0 .551.161 1.09.464 1.55l19.945 30.352v76.799a2.823 2.823 0 0 0 2.823 2.823h62.115a2.823 2.823 0 0 0 2.823-2.823v-76.799l19.945-30.352c.302-.46.464-.999.464-1.55v-55.627a28.034 28.034 0 0 0-19.307-26.64z"
+        />
+        <path
+          d="M251.017 86.05c-.879-.957-2.163-1.439-3.462-1.439h-9.69c-1.299 0-2.583.482-3.462 1.439a4.495 4.495 0 0 0-.592 5.295l5.18 7.809-2.425 20.456 4.775 12.702c.466 1.277 2.272 1.277 2.738 0l4.775-12.702-2.425-20.456 5.18-7.809a4.493 4.493 0 0 0-.592-5.295z"
+        />
+      </symbol>
+      <symbol id="icon-skills" viewBox="0 0 297 297">
+        <circle cx="259.875" cy="277.029" r="16.898" />
+        <circle cx="259.875" cy="141.843" r="16.898" />
+        <circle cx="259.875" cy="23.555" r="16.898" />
+        <path
+          d="M192.282 14.85a8.705 8.705 0 0 0-8.705 8.705v109.583h-8.193a8.705 8.705 0 0 0 0 17.41h8.193v126.481a8.705 8.705 0 0 0 8.705 8.705h37.6c-.804-2.765-1.244-5.684-1.244-8.705s.44-5.94 1.244-8.705h-28.895V150.548h28.895a31.126 31.126 0 0 1-1.244-8.705c0-3.021.44-5.94 1.244-8.705h-28.895V32.26h28.895a31.126 31.126 0 0 1-1.244-8.705c0-3.021.44-5.94 1.244-8.705h-37.6zM79.305 69.319c19.112 0 34.66-15.548 34.66-34.66S98.416 0 79.305 0s-34.66 15.548-34.66 34.66 15.548 34.659 34.66 34.659zM117.373 86.116l-.058-.019-9.892-3.035a3.071 3.071 0 0 0-3.788 1.885L82.833 142.02c-1.2 3.293-5.857 3.293-7.057 0L54.975 84.946a3.071 3.071 0 0 0-3.784-1.886l-9.884 3.032c-12.637 4.211-21.08 15.925-21.08 29.172v60.375c0 .599.175 1.185.504 1.686l21.705 33.029v83.572a3.072 3.072 0 0 0 3.072 3.072h67.593a3.072 3.072 0 0 0 3.072-3.072v-83.572l21.704-33.029a3.072 3.072 0 0 0 .505-1.686v-60.533a30.503 30.503 0 0 0-21.009-28.99z"
+        />
+        <path
+          d="M86.737 81.472c-.786-.856-1.935-1.287-3.098-1.287h-8.67c-1.163 0-2.312.431-3.098 1.287a4.023 4.023 0 0 0-.53 4.738l4.635 6.987-2.17 18.302 4.272 11.365c.417 1.143 2.033 1.143 2.45 0l4.272-11.365-2.17-18.302 4.635-6.987a4.018 4.018 0 0 0-.528-4.738z"
+        />
+      </symbol>
+      <symbol id="icon-wellfound" viewBox="0 0 739.8 355.5067">
+        <path
+          fill="#100f0d"
+          d="M107.8479 351.4931 0 3.9761h100.4177l63.6636 249.8426L233.2987 3.976h100.7186l69.1734 249.8427L466.8547 3.976h100.384L458.1093 351.4931h-106.996l-67.4586-250.9104-68.812 250.9104H107.8479"
+        />
+        <path
+          fill="#ea2623"
+          d="M739.7946 297.1561c0-32.227-26.1253-58.351-58.3506-58.351-32.2267 0-58.3507 26.124-58.3507 58.351 0 32.2251 26.124 58.3506 58.3507 58.3506 32.2253 0 58.3506-26.1255 58.3506-58.3506m0-238.8121c0-32.2267-26.1253-58.3507-58.3506-58.3507-32.2267 0-58.3507 26.124-58.3507 58.3507 0 32.2253 26.124 58.3507 58.3507 58.3507 32.2253 0 58.3506-26.1254 58.3506-58.3507"
+        />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 32 32">
+        <path
+          d="M0 15.968q0-3.264 1.28-6.208 2.528-5.952 8.48-8.48 2.944-1.28 6.208-1.28t6.208 1.28q5.888 2.496 8.48 8.48 1.28 3.040 1.28 6.208t-1.28 6.208q-2.592 6.016-8.48 8.544-2.944 1.28-6.208 1.28t-6.208-1.28q-5.952-2.56-8.48-8.544-1.28-2.944-1.28-6.208zM2.496 15.968q0 4.512 2.688 8.064 2.656 3.488 6.944 4.96v-2.56q0-1.92 1.28-2.784-0.64-0.032-1.504-0.224-1.632-0.288-2.784-1.024-2.912-1.76-2.912-6.368 0-2.4 1.6-4.096-0.736-1.888 0.16-4.096h0.64q0.32 0 0.8 0.16 1.248 0.384 2.784 1.408 1.952-0.512 3.84-0.512t3.872 0.512q1.248-0.832 2.336-1.28 1.024-0.384 1.472-0.32l0.384 0.032q0.864 2.208 0.16 4.096 1.6 1.696 1.6 4.096 0 3.584-1.76 5.408-0.96 1.024-2.528 1.6-1.312 0.48-2.912 0.608 1.312 0.928 1.312 2.784v2.56q4.128-1.472 6.816-5.024 2.624-3.52 2.624-8 0-2.72-1.056-5.248-1.024-2.432-2.88-4.288-1.792-1.792-4.288-2.848-2.56-1.088-5.216-1.088-2.624 0-5.248 1.088-2.4 1.024-4.288 2.848-1.792 1.856-2.88 4.288-1.056 2.528-1.056 5.248z"
+        ></path>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 33 32">
+        <path
+          d="M0 3.84q0-1.6 1.12-2.656t2.912-1.024q1.76 0 2.848 1.024 1.12 1.056 1.12 2.752 0 1.536-1.088 2.56-1.12 1.056-2.944 1.056h-0.032q-1.76 0-2.848-1.056t-1.088-2.656zM0.416 31.84v-21.376h7.104v21.376h-7.104zM11.456 31.84h7.104v-11.936q0-1.12 0.256-1.728 0.448-1.088 1.376-1.856t2.272-0.736q3.584 0 3.584 4.832v11.424h7.104v-12.256q0-4.736-2.24-7.2t-5.92-2.432q-4.128 0-6.432 3.552v0.064h-0.032l0.032-0.064v-3.040h-7.104q0.064 1.024 0.064 6.368t-0.064 15.008z"
+        ></path>
+      </symbol>
+      <symbol id="icon-xing" viewBox="0 0 30 32">
+        <path
+          d="M0 22.336h7.008l5.536-9.152-4.16-7.328h-7.008l4.16 7.328zM11.584 19.456l11.072-19.456h7.424l-11.040 19.456 7.104 12.544h-7.424z"
+        ></path>
+      </symbol>
+      <symbol id="icon-gmail" viewBox="0 0 24 24">
+        <path
+          d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"
+        />
+      </symbol>
+    </svg>
 
-</svg>
-
-
-<div class="tiles">
-    <a href="#about" id="about" class="tile tile--about">
+    <div class="tiles">
+      <a href="#about" id="about" class="tile tile--about">
         <svg aria-hidden="true" class="icon" role="img">
-            <title>about</title>
-            <use xlink:href="#icon-about"/>
+          <title>about</title>
+          <use xlink:href="#icon-about" />
         </svg>
-    </a>
-    <div class="tile__content tile__content--about">
+      </a>
+      <div class="tile__content tile__content--about">
         <div>
-            <h1>About Me</h1>
-            <div class="large">
-                <img src="assets/images/me.jpeg" alt="Roman Razumieienko" class="photo">
-                <p>
-                    Welcome to my personal website. I'm Roman, a seasoned Front-End Developer based in Odesa, Ukraine,
-                    with over 14 years of experience in planning, coding, testing, and maintaining both websites and
-                    applications. My career has been defined by a continuous pursuit of excellence and innovation,
-                    achieved through constant learning, experimenting, and staying up-to-date with the latest
-                    advancements in web technologies.
-                </p>
-                <p>
-                    Throughout my professional journey, I have had the privilege of contributing to a diverse range of
-                    projects—from small, bespoke websites to expansive, complex web applications. I have collaborated
-                    with clients across the U.S., Norway, Germany, and Austria, delivering tailored solutions in
-                    industries such as healthcare, food, fashion, entertainment, gaming, telecommunications, sports,
-                    mass media, hospitality, as well as the fast-evolving sectors of crypto and artificial intelligence.
-                </p>
-                <div class="stat-table">
-                    <div class="stat-table__cell">
-                        <div>14+</div>
-                        years in development
-                    </div>
-                    <div class="stat-table__cell">
-                        <div>45+</div>
-                        awesome projects
-                    </div>
-                    <div class="stat-table__cell">
-                        <div>25+</div>
-                        happy clients
-                    </div>
+          <h1>About Me</h1>
+          <div class="large">
+            <div class="photo-container">
+              <img
+                src="assets/images/me.jpeg"
+                alt="Roman Razumieienko"
+                class="photo"
+              />
+            </div>
+            <p>
+              Welcome to my personal website. I'm Roman, a seasoned Front-End
+              Developer based in Odesa, Ukraine, with over 14 years of
+              experience in planning, coding, testing, and maintaining both
+              websites and applications. My career has been defined by a
+              continuous pursuit of excellence and innovation, achieved through
+              constant learning, experimenting, and staying up-to-date with the
+              latest advancements in web technologies.
+            </p>
+            <p>
+              Throughout my professional journey, I have had the privilege of
+              contributing to a diverse range of projects—from small, bespoke
+              websites to expansive, complex web applications. I have
+              collaborated with clients across the U.S., Norway, Germany, and
+              Austria, delivering tailored solutions in industries such as
+              healthcare, food, fashion, entertainment, gaming,
+              telecommunications, sports, mass media, hospitality, as well as
+              the fast-evolving sectors of crypto and artificial intelligence.
+            </p>
+            <div class="stat-table">
+              <div class="stat-table__cell">
+                <div>14+</div>
+                years in development
+              </div>
+              <div class="stat-table__cell">
+                <div>45+</div>
+                awesome projects
+              </div>
+              <div class="stat-table__cell">
+                <div>25+</div>
+                happy clients
+              </div>
+            </div>
+
+            <p>
+              I approach each project with a commitment to thorough analysis,
+              ensuring that the best strategies and the most appropriate
+              toolsets are selected to meet your unique objectives and feature
+              requirements. Whether working collaboratively as part of a dynamic
+              team or independently as a lead developer, I pride myself on
+              delivering high-quality results even under the most challenging
+              deadlines.
+            </p>
+            <p>
+              I thrive on challenges and continuously seek opportunities to
+              expand my skill set, ensuring that I remain at the forefront of
+              industry innovations. My goal is to transform your ideas into
+              robust, user-friendly solutions that not only meet your
+              expectations but also set new standards of excellence.
+            </p>
+            <p>
+              Thank you for visiting my site. I look forward to the possibility
+              of collaborating and contributing to your next project.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#experience" id="experience" class="tile tile--experience">
+        <svg aria-hidden="true" class="icon" role="img">
+          <title>experience</title>
+          <use xlink:href="#icon-experience" />
+        </svg>
+      </a>
+      <div class="tile__content tile__content--experience">
+        <div>
+          <h1>Experience</h1>
+          <div class="experience">
+            <div class="timeline">
+              <div class="timeline__year">Present</div>
+              <div class="timeline__company timeline__company--mwdn">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">Senior Front-End developer</div>
+                MWDN
+                <div class="timeline__company-period">
+                  November 2022 - April 2023
                 </div>
-
-                <p> I approach each project with a commitment to thorough analysis, ensuring that the best strategies
-                    and the most appropriate toolsets are selected to meet your unique objectives and feature
-                    requirements. Whether working collaboratively as part of a dynamic team or independently as a lead
-                    developer, I pride myself on delivering high-quality results even under the most challenging
-                    deadlines.</p>
-                <p>I thrive on challenges and continuously seek opportunities to expand my skill set, ensuring that I
-                    remain at the forefront of industry innovations. My goal is to transform your ideas into robust,
-                    user-friendly solutions that not only meet your expectations but also set new standards of
-                    excellence.</p>
-                <p>Thank you for visiting my site. I look forward to the possibility of collaborating and contributing
-                    to your next project.</p>
-            </div>
-
-        </div>
-    </div>
-    <a href="#experience" id="experience" class="tile tile--experience">
-        <svg aria-hidden="true" class="icon" role="img">
-            <title>experience</title>
-            <use xlink:href="#icon-experience"/>
-        </svg>
-    </a>
-    <div class="tile__content tile__content--experience">
-        <div>
-            <h1>Experience</h1>
-            <div class="experience">
-                <div class="timeline">
-                    <div class="timeline__year">Present</div>
-                    <div class="timeline__company timeline__company--mwdn">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Senior Front-End developer</div>
-                        MWDN
-                        <div class="timeline__company-period">November 2022 - April 2023</div>
-                    </div>
-                    <div class="timeline__company timeline__company--gtt">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Senior / Lead Front-End developer</div>
-                        GetTechTalent
-                        <div class="timeline__company-period">April 2021 - November 2022</div>
-                    </div>
-                    <div class="timeline__company timeline__company--freelance">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Senior / Lead Front-End developer</div>
-                        Freelance
-                        <div class="timeline__company-period">April 2018 - April 2021</div>
-                    </div>
-                    <div class="timeline__company timeline__company--provectus">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Senior Front-End developer</div>
-                        Provectus
-                        <div class="timeline__company-period">November 2013 - April 2018</div>
-                    </div>
-                    <div class="timeline__company timeline__company--ciklum">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Front-End developer</div>
-                        Ciklum
-                        <div class="timeline__company-period">May 2013 - November 2013</div>
-                    </div>
-                    <div class="timeline__company timeline__company--provectus">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Front-End developer</div>
-                        Provectus
-                        <div class="timeline__company-period">Octtober 2012 - May 2013</div>
-                    </div>
-
-                    <div class="timeline__company timeline__company--abp">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">JavaScript developer</div>
-                        ABP
-                        <div class="timeline__company-period">October 2011 - October 2012</div>
-                    </div>
-
-                    <div class="timeline__company timeline__company--onu">
-                        <div class="timeline__company-line"></div>
-                        <div class="timeline__position">Webmaster</div>
-                        ONU
-                        <div class="timeline__company-period">September 2010 - May 2012</div>
-                    </div>
-                    <div class="timeline__year">2010</div>
+              </div>
+              <div class="timeline__company timeline__company--gtt">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">
+                  Senior / Lead Front-End developer
                 </div>
+                GetTechTalent
+                <div class="timeline__company-period">
+                  April 2021 - November 2022
+                </div>
+              </div>
+              <div class="timeline__company timeline__company--freelance">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">
+                  Senior / Lead Front-End developer
+                </div>
+                Freelance
+                <div class="timeline__company-period">
+                  April 2018 - April 2021
+                </div>
+              </div>
+              <div class="timeline__company timeline__company--provectus">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">Senior Front-End developer</div>
+                Provectus
+                <div class="timeline__company-period">
+                  November 2013 - April 2018
+                </div>
+              </div>
+              <div class="timeline__company timeline__company--ciklum">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">Front-End developer</div>
+                Ciklum
+                <div class="timeline__company-period">
+                  May 2013 - November 2013
+                </div>
+              </div>
+              <div class="timeline__company timeline__company--provectus">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">Front-End developer</div>
+                Provectus
+                <div class="timeline__company-period">
+                  Octtober 2012 - May 2013
+                </div>
+              </div>
+
+              <div class="timeline__company timeline__company--abp">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">JavaScript developer</div>
+                ABP
+                <div class="timeline__company-period">
+                  October 2011 - October 2012
+                </div>
+              </div>
+
+              <div class="timeline__company timeline__company--onu">
+                <div class="timeline__company-line"></div>
+                <div class="timeline__position">Webmaster</div>
+                ONU
+                <div class="timeline__company-period">
+                  September 2010 - May 2012
+                </div>
+              </div>
+              <div class="timeline__year">2010</div>
             </div>
+          </div>
         </div>
-    </div>
-    <a href="#skills" id="skills" class="tile tile--skills">
+      </div>
+      <a href="#skills" id="skills" class="tile tile--skills">
         <svg aria-hidden="true" class="icon" role="img">
-            <title>skills</title>
-            <use xlink:href="#icon-skills"/>
+          <title>skills</title>
+          <use xlink:href="#icon-skills" />
         </svg>
-    </a>
-    <div class="tile__content tile__content--skills">
+      </a>
+      <div class="tile__content tile__content--skills">
         <div>
-            <h1>Skills</h1>
-            <div class="skills">
-                <div class="skills__title">JavaScript</div>
-                <div class="skill">Typescript</div>
-                <div class="skill">React</div>
-                <div class="skill">Zustand</div>
-                <div class="skill">Redux</div>
-                <div class="skill">TanStack Query</div>
-                <div class="skill">Ramda</div>
-                <div class="skill">Vue</div>
-                <div class="skill">Vuex</div>
-                <div class="skill">Node.js</div>
-                <div class="skill">Knockout</div>
-                <div class="skill">Underscore/Lodash</div>
-                <div class="skill">jQuery</div>
-                <div class="skill">Express</div>
-                <div class="skill">Vitest</div>
-                <div class="skill">Backbone</div>
-                <div class="skill">Backbone.Marionette</div>
-                <div class="skill">jQuery UI</div>
-                <div class="skill">Mocha/Chai</div>
-                <div class="skill">Jest</div>
-                <div class="skill">React Testing Library</div>
+          <h1>Skills</h1>
+          <div class="skills">
+            <div class="skills__title">JavaScript</div>
+            <div class="skill">Typescript</div>
+            <div class="skill">React</div>
+            <div class="skill">Zustand</div>
+            <div class="skill">Redux</div>
+            <div class="skill">TanStack Query</div>
+            <div class="skill">Ramda</div>
+            <div class="skill">Vue</div>
+            <div class="skill">Vuex</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Knockout</div>
+            <div class="skill">Underscore/Lodash</div>
+            <div class="skill">jQuery</div>
+            <div class="skill">Express</div>
+            <div class="skill">Vitest</div>
+            <div class="skill">Backbone</div>
+            <div class="skill">Backbone.Marionette</div>
+            <div class="skill">jQuery UI</div>
+            <div class="skill">Mocha/Chai</div>
+            <div class="skill">Jest</div>
+            <div class="skill">React Testing Library</div>
 
-                <div class="skills__title">Build tools / Bundlers / Loaders</div>
-                <div class="skill">Vite</div>
-                <div class="skill">Webpack</div>
-                <div class="skill">Rush</div>
-                <div class="skill">Gulp</div>
-                <div class="skill">Grunt</div>
-                <div class="skill">Require.js</div>
-                <div class="skill">Browserify</div>
+            <div class="skills__title">Build tools / Bundlers / Loaders</div>
+            <div class="skill">Vite</div>
+            <div class="skill">Webpack</div>
+            <div class="skill">Rush</div>
+            <div class="skill">Gulp</div>
+            <div class="skill">Grunt</div>
+            <div class="skill">Require.js</div>
+            <div class="skill">Browserify</div>
 
-                <div class="skills__title">HTML5/CSS3 mastery</div>
-                <div class="skill">BEM / SUIT / SMACSS</div>
-                <div class="skill">CSS modules</div>
-                <div class="skill">Tailwind</div>
-                <div class="skill">SASS</div>
-                <div class="skill">LESS</div>
-                <div class="skill">Semantic UI</div>
-                <div class="skill">Foundation</div>
-                <div class="skill">Bootstrap</div>
-                <div class="skill">Compass</div>
-                <div class="skill">Stylus</div>
+            <div class="skills__title">HTML5/CSS3 mastery</div>
+            <div class="skill">BEM / SUIT / SMACSS</div>
+            <div class="skill">CSS modules</div>
+            <div class="skill">Tailwind</div>
+            <div class="skill">SASS</div>
+            <div class="skill">LESS</div>
+            <div class="skill">Semantic UI</div>
+            <div class="skill">Foundation</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Compass</div>
+            <div class="skill">Stylus</div>
 
-                <div class="skills__title">Version control systems</div>
-                <div class="skill">Git</div>
-                <div class="skill">SVN</div>
+            <div class="skills__title">Version control systems</div>
+            <div class="skill">Git</div>
+            <div class="skill">SVN</div>
 
-                <div class="skills__title">Workflow Management</div>
-                <div class="skill">Jira</div>
-                <div class="skill">Redmine</div>
-                <div class="skill">Bugzilla</div>
-            </div>
-
+            <div class="skills__title">Workflow Management</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Redmine</div>
+            <div class="skill">Bugzilla</div>
+          </div>
         </div>
-    </div>
-    <a href="#contacts" id="contacts" class="tile tile--contacts">
+      </div>
+      <a href="#contacts" id="contacts" class="tile tile--contacts">
         <svg aria-hidden="true" class="icon" role="img">
-            <title>contacts</title>
-            <use xlink:href="#icon-contacts"/>
+          <title>contacts</title>
+          <use xlink:href="#icon-contacts" />
         </svg>
-    </a>
-    <div class="tile__content tile__content--contacts">
+      </a>
+      <div class="tile__content tile__content--contacts">
         <div>
-            <h1>Contacts</h1>
-            <p class="large">If you're interested in collaborating, have any inquiries, or simply want to connect, feel
-                free to reach out using the contact options below:</p>
+          <h1>Contacts</h1>
+          <p class="large">
+            If you're interested in collaborating, have any inquiries, or simply
+            want to connect, feel free to reach out using the contact options
+            below:
+          </p>
 
-            <div class="contacts">
-                <a title="Linkedin" href="https://www.linkedin.com/in/roman-razumieienko/?locale=en_US" target="_blank"
-                   class="contact contact--linkedin" rel="noopener">
-                    <svg aria-hidden="true" class="icon" role="img">
-                        <title>linkedin</title>
-                        <use xlink:href="#icon-linkedin"/>
-                    </svg>
-                </a>
-                <a title="Wellfound" href="https://wellfound.com/u/roman-razumeyenko" target="_blank"
-                   class="contact contact--wellfound"
-                   rel="noopener">
-                    <svg aria-hidden="true" class="icon" role="img">
-                        <title>wellfound</title>
-                        <use xlink:href="#icon-wellfound"/>
-                    </svg>
-                </a>
-                <a title="Xing" href="https://www.xing.com/profile/Roman_Razumieienko" target="_blank"
-                   class="contact contact--xing" rel="noopener">
-                    <svg aria-hidden="true" class="icon" role="img">
-                        <title>xing</title>
-                        <use xlink:href="#icon-xing"/>
-                    </svg>
-                </a>
-                <a title="Gmail" href="mailto:razumyeyenko@gmail.com" class="contact contact--gmail">
-                    <svg aria-hidden="true" class="icon" role="img">
-                        <title>gmail</title>
-                        <use xlink:href="#icon-gmail"/>
-                    </svg>
-                </a>
-                <a title="Github" href="https://github.com/Razum" target="_blank" class="contact contact--github"
-                   rel="noopener">
-                    <svg aria-hidden="true" class="icon" role="img">
-                        <title>github</title>
-                        <use xlink:href="#icon-github"/>
-                    </svg>
-                </a>
-            </div>
-            <p class="large">I welcome opportunities to work with clients, partners, and fellow professionals. I’ll do
-                my best to respond promptly and look forward to hearing from you.</p>
-            <p class="large">Thank you for considering me for your next project!</p>
-
+          <div class="contacts">
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/roman-razumieienko/?locale=en_US"
+              target="_blank"
+              class="contact contact--linkedin"
+              rel="noopener"
+            >
+              <svg aria-hidden="true" class="icon" role="img">
+                <title>linkedin</title>
+                <use xlink:href="#icon-linkedin" />
+              </svg>
+            </a>
+            <a
+              title="Wellfound"
+              href="https://wellfound.com/u/roman-razumeyenko"
+              target="_blank"
+              class="contact contact--wellfound"
+              rel="noopener"
+            >
+              <svg aria-hidden="true" class="icon" role="img">
+                <title>wellfound</title>
+                <use xlink:href="#icon-wellfound" />
+              </svg>
+            </a>
+            <a
+              title="Xing"
+              href="https://www.xing.com/profile/Roman_Razumieienko"
+              target="_blank"
+              class="contact contact--xing"
+              rel="noopener"
+            >
+              <svg aria-hidden="true" class="icon" role="img">
+                <title>xing</title>
+                <use xlink:href="#icon-xing" />
+              </svg>
+            </a>
+            <a
+              title="Gmail"
+              href="mailto:razumyeyenko@gmail.com"
+              class="contact contact--gmail"
+            >
+              <svg aria-hidden="true" class="icon" role="img">
+                <title>gmail</title>
+                <use xlink:href="#icon-gmail" />
+              </svg>
+            </a>
+            <a
+              title="Github"
+              href="https://github.com/Razum"
+              target="_blank"
+              class="contact contact--github"
+              rel="noopener"
+            >
+              <svg aria-hidden="true" class="icon" role="img">
+                <title>github</title>
+                <use xlink:href="#icon-github" />
+              </svg>
+            </a>
+          </div>
+          <p class="large">
+            I welcome opportunities to work with clients, partners, and fellow
+            professionals. I'll do my best to respond promptly and look forward
+            to hearing from you.
+          </p>
+          <p class="large">
+            Thank you for considering me for your next project!
+          </p>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

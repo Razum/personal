@@ -480,16 +480,47 @@ p {
   letter-spacing: var(--letter-spacing-tight);
 }
 
+.photo-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.photo-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 0.25rem;
+  background: conic-gradient(from 0deg, #589a35, #c68532, #c8cc55, #589a35);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotate 3s linear infinite;
+}
+
 .photo {
   display: block;
-  shape-outside: circle(50%);
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (width >= 32rem) {
-  .photo {
+  .photo-container {
     float: left;
     max-width: 25%;
     margin: 0 1.5em 1em 0;
